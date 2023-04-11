@@ -1,10 +1,10 @@
-include "main.h"
+#include "main.h"
 #include <stdlib.h>
 /**
- * argstostr - a function that concatenates all arguments of a program.
+ * argstostr - a function that concatenates all arguments of a program
  * @ac: int input
  * @av: double pointer array
- * Return: Always 0 succesful
+ * Return: Always 0 successful
  */
 char *argstostr(int ac, char **av)
 {
