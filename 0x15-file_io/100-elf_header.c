@@ -18,10 +18,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - Checks if a file is an ELF file.
+ * check_elf - displays contained ELF header at start of ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
- *
  * Description: If the file is not an ELF file - exit code 98.
+ * Return: Always 0 (success)
  */
 void check_elf(unsigned char *e_ident)
 {
@@ -41,10 +41,10 @@ void check_elf(unsigned char *e_ident)
 }
 
 /**
- * print_magic - Prints the magic numbers of an ELF header.
+ * print_magic - displays contained ELF header at start of ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
- *
  * Description: Magic numbers are separated by spaces.
+ * Return: Always 0 (success)
  */
 void print_magic(unsigned char *e_ident)
 {
@@ -66,6 +66,7 @@ void print_magic(unsigned char *e_ident)
 /**
  * print_class - Prints the class of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
+ * Return: Always 0 (success)
  */
 void print_class(unsigned char *e_ident)
 {
@@ -88,8 +89,9 @@ void print_class(unsigned char *e_ident)
 }
 
 /**
- * print_data - Prints the data of an ELF header.
+ * print_data - displays contained ELF header at start of ELF file.
  * @e_ident: A pointer to an array containing the ELF class.
+ * Return: Always 0 (success)
  */
 void print_data(unsigned char *e_ident)
 {
@@ -112,7 +114,7 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- * print_version - Prints the version of an ELF header.
+ * print_version - displays contained ELF header at start of ELF file.
  * @e_ident: A pointer to an array containing the ELF version.
  */
 void print_version(unsigned char *e_ident)
@@ -134,6 +136,7 @@ void print_version(unsigned char *e_ident)
 /**
  * print_osabi - Prints the OS/ABI of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
+ * Return: Always 0 (success)
  */
 void print_osabi(unsigned char *e_ident)
 {
@@ -187,9 +190,10 @@ void print_abi(unsigned char *e_ident)
 }
 
 /**
- * print_type - Prints the type of an ELF header.
+ * print_type - displays contained ELF header at start of ELF file.
  * @e_type: The ELF type.
  * @e_ident: A pointer to an array containing the ELF class.
+ * Return; Always 0 (success)
  */
 void print_type(unsigned int e_type, unsigned char *e_ident)
 {
